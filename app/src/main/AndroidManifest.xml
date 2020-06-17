@@ -12,12 +12,19 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="jp.ac.titech.itpro.sdl.startservice.SERVICE3" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <service android:name=".Service1" />
-        <service android:name=".Service2" android:exported="false" />
+        <service
+            android:name=".Service2"
+            android:exported="false" />
+        <service
+            android:name=".Service3"
+            android:exported="false" />
     </application>
 
 </manifest>
